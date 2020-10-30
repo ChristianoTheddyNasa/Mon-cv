@@ -1,0 +1,369 @@
+body{
+    background-image:linear-gradient(hsla(231, 100%, 99%, 0.75),90%,rgb(177, 170, 170)),
+    url("/image/fond.jpg");
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'EB Garamond', serif;
+    width: 94vw;
+    color:black;
+    padding: 0;
+    margin: 0 3vw;
+    height: 100px;
+    /*box-sizing: border-box;*/
+
+}
+
+
+
+
+
+
+
+
+.cv{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 90px;
+    font-size: 20px;
+    letter-spacing: 0.1cm;
+    line-height: 5;
+    background: linear-gradient(rgba(0, 206, 201,1.0),rgba(116, 185, 255,0.3));
+    transition:  background-color 2s;
+}
+
+.cv:hover{
+    background: linear-gradient(hsla(230, 30%, 10%, 0.75),90%,teal);
+}
+
+/* ******************************  ENTETE  ***************************************  */
+
+.entete{
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+}
+
+.photo{
+    margin-top: 10px;
+    margin-left: 5px;
+    align-items: center;
+    
+}
+
+.photo >img{
+    box-sizing: border-box;
+    border-radius: 40px;
+    border-style: hidden;
+    box-shadow: whitesmoke -7px -1px 5px;
+    margin-left: 20px;
+}
+
+
+
+.resume{
+    text-align: center;
+    line-height: 20px;
+    padding: 50px;
+}
+
+.competence{
+    text-align: center;
+    font-family: Times;
+    font-size: 20px;
+    line-height: 3rem;
+}
+
+
+
+.about-liste{
+    padding-top: 30px;
+    
+}
+
+.about-liste li{
+    line-height: 35px;
+    
+}
+
+
+
+/* ****************************** FIN ENTETE  ***************************************  */
+
+
+
+/* ******************************  MAIN  ***************************************  */
+
+
+.main-titre{
+    color: #9E9E9E;
+    padding-bottom: -35px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.main{
+    display: grid;
+    grid-template-columns:  1fr 200px;
+}
+
+
+.corps{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+
+
+.main-texte{
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    margin-right: 100px;
+}
+
+.main-texte li{
+    line-height: 2rem;
+}
+
+h1{
+    color: #e46f4c;
+}
+
+
+/* ******************************  FIN MAIN  ***************************************  */
+
+
+
+/* ******************************  SIDEBAR  ***************************************  */
+
+
+.sidebar .quality{
+    line-height: 30px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+
+
+
+.skills{
+    width:150px;
+    margin: 0;
+    color: black;
+    padding: 0;
+}
+
+.skills li{
+margin:20px 0;
+list-style: none;
+}
+
+.bar {
+    background: white;
+    display: block;
+    height: 4px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    /* box-shadow:0 0 10px #2187e7b3; */
+}
+
+
+.bar span{
+    height: 4px;
+    float: left;
+    background:  #2187e7;
+}
+
+
+/* -----------------DEBUT DE SEPARATION------------------ */
+
+.bar_sep {
+    background: #b8361fef;
+    display: block;
+    height: 1px;
+    border: 1px solid rgba(226, 88, 24, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    
+} 
+
+
+.bar_sep span{
+    height: 1px;
+    float: left;
+    background:  #e46f4c;
+}
+
+.separation{
+    width: 100%;
+    margin: 0;
+    color: #e46f4c;
+    padding: 0;
+
+}
+
+/*-------------FIN DE SEPARATION----------------- */
+
+.Python{
+    width: 90%;
+    animation: Python 2s;
+}
+
+.css{
+    width: 65%;
+    animation: css 2s;
+}
+
+.Matlab{
+    width: 65%;
+    animation: Matlab 2s;
+}
+
+.r{
+    width: 80%;
+    animation: r 2s;
+}
+
+
+@keyframes Python {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes Matlab {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 65%;
+    }
+}
+@keyframes r {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}
+
+/*POUR LANGUES*/
+
+
+.Francais{
+    width: 100%;
+    animation: Python 2s;
+}
+
+.Italien{
+    width: 65%;
+    animation: css 2s;
+}
+
+.Malagasy{
+    width: 100%;
+    animation: Matlab 2s;
+}
+
+.Anglais{
+    width: 95%;
+    animation: r 2s;
+}
+
+
+@keyframes Francais {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes Italien {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes Malagasy {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+@keyframes Anglais {
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 95%;
+    }
+}
+
+
+/* ******************************  FIN SIDEBAR  ***************************************  */
+
+
+
+
+
+
+
+/* ******************************  FOOTER  ***************************************  */
+
+
+.pied-titre{
+    color: #9E9E9E;
+    padding-bottom: -35px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.pied{
+    display: grid;
+    grid-template-columns: 350px 1fr ;
+}
+
+.pied-texte li{
+    line-height: 2rem;
+    margin-right: 20px;
+}
+
+
+.date{
+    font-family: ;
+    font-size: 30px;
+    padding: 0;
+} 
+ 
+
+/* ******************************  FIN FOOTER  ***************************************  */
+
